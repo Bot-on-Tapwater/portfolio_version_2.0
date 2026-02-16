@@ -1,705 +1,1157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="flex flex-col items-end" lang="en">
-
-<head>
+  <head>
     <title>🙃Bot-on-Tapwater🙂</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Rammetto One Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" type="image/svg+xml" href="./assets/water-drop-svgrepo-com.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/water-drop-svgrepo-com.svg"
+    />
 
     <!-- Apply custom font via Tailwind config -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        rammetto: ['"Rammetto One"', 'cursive'],
-                    },
-                },
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              rammetto: ['"Rammetto One"', "cursive"],
             },
-        };
+          },
+        },
+      };
     </script>
+    <script
+      defer
+      src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
+      id="tcx-callus-js"
+      charset="utf-8"
+    ></script>
 
     <title>Rammetto One + Tailwind Site</title>
-</head>
+  </head>
 
-<body
-    class="flex flex-col text-left bg-white text-gray-600 font-rammetto items-start w-full lg:w-3/4 pt-10 px-10 lg:pl-10 pb-20 justify-center gap-y-20">
+  <body
+    class="flex flex-col text-left bg-white text-gray-600 font-rammetto items-start w-full lg:w-3/4 pt-10 px-10 lg:pl-10 pb-20 justify-center gap-y-20"
+  >
     <!-- Names and Opening statement -->
     <div class="flex flex-col gap-y-10">
-        <div
-            class="font-extrabold text-4xl max-w-8 leading-normal hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-            Munda Brandon</div>
-        <div class="font-extrabold text-2xl"><span
-                class="inline-block hover:animate-spin hover:cursor-pointer">🙃</span><span
-                class="hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"> Bot on
-                Tapwater
-            </span><span class="inline-block hover:animate-spin hover:cursor-pointer">🙂</span>
-        </div>
-        <div
-            class="max-w-xs text-justify break-words leading-relaxed hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-            I'm a full-stack developer passionate about
-            building
-            innovative,
-            accessible,
-            and impactful
-            web
-            applications
-            that make the internet a more creative and user-friendly place.</div>
+      <div
+        class="font-extrabold text-4xl max-w-8 leading-normal hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+      >
+        Munda Brandon
+      </div>
+      <div class="font-extrabold text-2xl">
+        <span class="inline-block hover:animate-spin hover:cursor-pointer"
+          >🙃</span
+        ><span
+          class="hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+        >
+          Bot on Tapwater </span
+        ><span class="inline-block hover:animate-spin hover:cursor-pointer"
+          >🙂</span
+        >
+      </div>
+      <div
+        class="max-w-xs text-justify break-words leading-relaxed hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+      >
+        I'm a full-stack developer passionate about building innovative,
+        accessible, and impactful web applications that make the internet a more
+        creative and user-friendly place.
+      </div>
     </div>
     <!-- Contact Icons -->
     <div class="flex gap-x-0">
-        <!-- LinkedIn icon-->
-        <a href="https://www.linkedin.com/in/brandon-munda/" target="_blank" rel="noopener noreferrer">
-            <div
-                class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none">
-                <div
-                    class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none">
-                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
-                            fill="currentColor" />
-                        <path
-                            d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
-                            fill="currentColor" />
-                        <path
-                            d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
-                            fill="currentColor" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
-                            fill="currentColor" />
-                    </svg>
-                </div>
-            </div>
-        </a>
-        <!-- Email icon -->
-        <a href="mailto:mundabrandon@outlook.com" target="_blank" rel="noopener noreferrer">
-            <div
-                class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none">
-                <div
-                    class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none">
-                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" />
-                    </svg>
-                </div>
-            </div>
-        </a>
-        <!-- Whatsapp icon -->
-        <a href="https://wa.me/+254703676507?text=Hello%20there!%20I%20would%20like%20to%20connect%20with%20you."
-            target="_blank" rel="noopener noreferrer">
-            <div
-                class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none">
-                <div
-                    class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none">
-                    <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
-                            fill="currentColor" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
-                            fill="currentColor" />
-                    </svg>
-                </div>
-            </div>
-        </a>
-        <!-- Github icon-->
-        <a href="https://github.com/Bot-on-Tapwater" target="_blank" rel="noopener noreferrer">
-            <div
-                class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none">
-                <div
-                    class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none">
-                    <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor">
-                        <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                            d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                    </svg>
-                </div>
-            </div>
-        </a>
+      <!-- LinkedIn icon-->
+      <a
+        href="https://www.linkedin.com/in/brandon-munda/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none"
+        >
+          <div
+            class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                fill="currentColor"
+              />
+              <path
+                d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                fill="currentColor"
+              />
+              <path
+                d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+      <!-- Email icon -->
+      <a
+        href="mailto:mundabrandon@outlook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none"
+        >
+          <div
+            class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+      <!-- Whatsapp icon -->
+      <a
+        href="https://wa.me/+254703676507?text=Hello%20there!%20I%20would%20like%20to%20connect%20with%20you."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none"
+        >
+          <div
+            class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                fill="currentColor"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
+      <!-- Github icon-->
+      <a
+        href="https://github.com/Bot-on-Tapwater"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          class="group w-16 h-16 bg-black/0 flex items-center justify-center rounded-full hover:bg-gray-600 transition-all duration-1000 ease-in-out animate-bounce hover:animate-none"
+        >
+          <div
+            class="w-8 h-8 text-gray-600 group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out hover:cursor-pointer group-hover:animate-none"
+          >
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 192 192"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+            >
+              <path
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+                d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+              />
+            </svg>
+          </div>
+        </div>
+      </a>
     </div>
     <!-- Work Section -->
     <div class="flex flex-col gap-y-10">
+      <div
+        class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+      >
+        Work
+      </div>
+      <!-- Work done -->
+      <div class="flex gap-x-10 flex-wrap gap-y-10">
+        <!-- SkinSoko -->
         <div
-            class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-            Work</div>
-        <!-- Work done -->
-        <div class="flex gap-x-10 flex-wrap gap-y-10">
-            <!-- SkinSoko -->
-            <div
-                class="relative relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/skinsoko.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://skinsoko.com" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://github.com/Bot-on-Tapwater/skinsoko_project" target="_blank"
-                        rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- GlobalCommunity -->
-            <div
-                class="relative relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/global-community.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://globalcommunity.app" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://github.com/Bot-on-Tapwater/flagquiz" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- EridoSolutions -->
-            <div
-                class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/erido.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://erido-site.vercel.app" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://github.com/Bot-on-Tapwater/erido_backend" target="_blank"
-                        rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- IkoChill -->
-            <div
-                class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/ikochill.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://www.ikochill.com/" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://www.ikochill.com/" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- WIPMS -->
-            <div
-                class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/wipms.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://wipms.com" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://wipms.com" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Navengine -->
-            <div
-                class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/navengine.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://capeatlas.africa" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://capeatlas.africa" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- Rickrol -->
-            <div
-                class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/question-mark.png')]">
-                <!-- Hover effect -->
-                <div
-                    class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none">
-                </div>
-                <!-- github and live link -->
-                <div
-                    class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out">
-                    <!-- live url icon -->
-                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                    </a>
-                    <!-- github icon -->
-                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
-                        <div
-                            class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out">
-                            <svg width="100%" height="100%" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor">
-                                <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-                                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
+          class="relative relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/skinsoko.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://skinsoko.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://github.com/Bot-on-Tapwater/skinsoko_project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
+        <!-- GlobalCommunity -->
+        <div
+          class="relative relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/global-community.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://globalcommunity.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://github.com/Bot-on-Tapwater/flagquiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- EridoSolutions -->
+        <div
+          class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/erido.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://erido-site.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://github.com/Bot-on-Tapwater/erido_backend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- IkoChill -->
+        <div
+          class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/ikochill.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://www.ikochill.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://www.ikochill.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- WIPMS -->
+        <div
+          class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/wipms.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://wipms.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://wipms.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Navengine -->
+        <div
+          class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/navengine.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://capeatlas.africa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://capeatlas.africa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Rickrol -->
+        <div
+          class="relative border-4 border-gray-600 min-w-72 max-w-72 h-[32rem] bg-cover bg-center hover:cursor-pointer hover:shadow-2xl hover:shadow-black hover:border-0 transition-all ease-in-out duration-200 flex justify-center items-center group bg-[url('./assets/question-mark.png')]"
+        >
+          <!-- Hover effect -->
+          <div
+            class="absolute inset-0 bg-black opacity-0 group-hover:opacity-75 transition-all duration-300 ease-in-out pointer-events-none"
+          ></div>
+          <!-- github and live link -->
+          <div
+            class="relative z-10 flex gap-x-5 bg-[#00bcd4] text-white p-5 opacity-0 group-hover:opacity-100 border-4 border-gray-600 transition-all duration-1000 ease-in-out"
+          >
+            <!-- live url icon -->
+            <a
+              href="https://youtu.be/dQw4w9WgXcQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.83824 18.4467C10.0103 18.7692 10.1826 19.0598 10.3473 19.3173C8.59745 18.9238 7.07906 17.9187 6.02838 16.5383C6.72181 16.1478 7.60995 15.743 8.67766 15.4468C8.98112 16.637 9.40924 17.6423 9.83824 18.4467ZM11.1618 17.7408C10.7891 17.0421 10.4156 16.1695 10.1465 15.1356C10.7258 15.0496 11.3442 15 12.0001 15C12.6559 15 13.2743 15.0496 13.8535 15.1355C13.5844 16.1695 13.2109 17.0421 12.8382 17.7408C12.5394 18.3011 12.2417 18.7484 12 19.0757C11.7583 18.7484 11.4606 18.3011 11.1618 17.7408ZM9.75 12C9.75 12.5841 9.7893 13.1385 9.8586 13.6619C10.5269 13.5594 11.2414 13.5 12.0001 13.5C12.7587 13.5 13.4732 13.5593 14.1414 13.6619C14.2107 13.1384 14.25 12.5841 14.25 12C14.25 11.4159 14.2107 10.8616 14.1414 10.3381C13.4732 10.4406 12.7587 10.5 12.0001 10.5C11.2414 10.5 10.5269 10.4406 9.8586 10.3381C9.7893 10.8615 9.75 11.4159 9.75 12ZM8.38688 10.0288C8.29977 10.6478 8.25 11.3054 8.25 12C8.25 12.6946 8.29977 13.3522 8.38688 13.9712C7.11338 14.3131 6.05882 14.7952 5.24324 15.2591C4.76698 14.2736 4.5 13.168 4.5 12C4.5 10.832 4.76698 9.72644 5.24323 8.74088C6.05872 9.20472 7.1133 9.68686 8.38688 10.0288ZM10.1465 8.86445C10.7258 8.95042 11.3442 9 12.0001 9C12.6559 9 13.2743 8.95043 13.8535 8.86447C13.5844 7.83055 13.2109 6.95793 12.8382 6.2592C12.5394 5.69894 12.2417 5.25156 12 4.92432C11.7583 5.25156 11.4606 5.69894 11.1618 6.25918C10.7891 6.95791 10.4156 7.83053 10.1465 8.86445ZM15.6131 10.0289C15.7002 10.6479 15.75 11.3055 15.75 12C15.75 12.6946 15.7002 13.3521 15.6131 13.9711C16.8866 14.3131 17.9412 14.7952 18.7568 15.2591C19.233 14.2735 19.5 13.1679 19.5 12C19.5 10.8321 19.233 9.72647 18.7568 8.74093C17.9413 9.20477 16.8867 9.6869 15.6131 10.0289ZM17.9716 7.46178C17.2781 7.85231 16.39 8.25705 15.3224 8.55328C15.0189 7.36304 14.5908 6.35769 14.1618 5.55332C13.9897 5.23077 13.8174 4.94025 13.6527 4.6827C15.4026 5.07623 16.921 6.08136 17.9716 7.46178ZM8.67765 8.55325C7.61001 8.25701 6.7219 7.85227 6.02839 7.46173C7.07906 6.08134 8.59745 5.07623 10.3472 4.6827C10.1826 4.94025 10.0103 5.23076 9.83823 5.5533C9.40924 6.35767 8.98112 7.36301 8.67765 8.55325ZM15.3224 15.4467C15.0189 16.637 14.5908 17.6423 14.1618 18.4467C13.9897 18.7692 13.8174 19.0598 13.6527 19.3173C15.4026 18.9238 16.921 17.9186 17.9717 16.5382C17.2782 16.1477 16.3901 15.743 15.3224 15.4467ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </a>
+            <!-- github icon -->
+            <a
+              href="https://youtu.be/dQw4w9WgXcQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                class="w-8 h-8 hover:cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              >
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 192 192"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"
+                  />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Experience Section -->
     <div class="flex flex-col gap-y-10">
+      <div
+        class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+      >
+        Experience
+      </div>
+      <div class="flex gap-x-10 flex-wrap gap-y-10">
+        <!-- Frontend -->
         <div
-            class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-            Experience</div>
-        <div class="flex gap-x-10 flex-wrap gap-y-10">
-            <!-- Frontend -->
-            <div
-                class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out">
-                <div
-                    class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium">
-                    Frontend
-                    Development</div>
-                <!-- Skills -->
-                <div class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs">
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Next.js</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Tailwind.css</div>
-                    </div>
-                </div>
-
+          class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out"
+        >
+          <div
+            class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium"
+          >
+            Frontend Development
+          </div>
+          <!-- Skills -->
+          <div class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs">
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Next.js
+              </div>
             </div>
-            <!-- Backend -->
-            <div
-                class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out">
-                <div
-                    class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium">
-                    Backend
-                    Development</div>
-                <!-- Skills -->
-                <div class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs items-start">
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Django</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Flask</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Express.js</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Nest.js</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            BeeGo</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Gin</div>
-                    </div>
-                </div>
-
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Tailwind.css
+              </div>
             </div>
-            <!-- DevOps -->
-            <div
-                class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out">
-                <div
-                    class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium">
-                    DevOps</div>
-                <!-- Skills -->
-                <div class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs">
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            CI/CD</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Cloud</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Nginx</div>
-                    </div>
-                    <!-- Skill ## -->
-                    <div class="flex gap-x-1 items-center min-w-32">
-                        <!-- Icon -->
-                        <div
-                            class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                class="w-full h-full">
-                                <g id="style=fill">
-                                    <g id="check-circle">
-                                        <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
-                                            fill="currentColor" />
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <!-- Text -->
-                        <div
-                            class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou">
-                            Certbot</div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+        <!-- Backend -->
+        <div
+          class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out"
+        >
+          <div
+            class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium"
+          >
+            Backend Development
+          </div>
+          <!-- Skills -->
+          <div
+            class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs items-start"
+          >
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Django
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Flask
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Express.js
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Nest.js
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                BeeGo
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Gin
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DevOps -->
+        <div
+          class="group flex flex-col gap-y-5 border-4 border-gray-600 p-10 bg-gray-600 text-white lg:max-w-sm max-w-xs hover:-translate-y-5 transition-all duration-1000 ease-in-out"
+        >
+          <div
+            class="group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out text-lg font-medium"
+          >
+            DevOps
+          </div>
+          <!-- Skills -->
+          <div class="flex gap-x-10 flex-wrap gap-y-10 max-w-xs min-w-xs">
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                CI/CD
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Cloud
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Nginx
+              </div>
+            </div>
+            <!-- Skill ## -->
+            <div class="flex gap-x-1 items-center min-w-32">
+              <!-- Icon -->
+              <div
+                class="w-8 h-8 animate-pulse group-hover:animate-none group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-full h-full"
+                >
+                  <g id="style=fill">
+                    <g id="check-circle">
+                      <path
+                        id="Subtract"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM16.5303 10.0303C16.8232 9.73744 16.8232 9.26256 16.5303 8.96967C16.2374 8.67678 15.7626 8.67678 15.4697 8.96967L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6566C10.1126 15.34 11.2207 15.34 11.9041 14.6566L16.5303 10.0303Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <!-- Text -->
+              <div
+                class="text-sm font-normal group-hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-ou"
+              >
+                Certbot
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Extras -->
     <div class="flex flex-col gap-y-10">
-        <div
-            class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out">
-            Extras</div>
-        <div class="lg:flex-row flex-col gap-y-10 text-sm font-normal flex gap-x-10">
-            <a href="./assets/aws.pdf" target="_blank" rel="noopener noreferrer"
-                class="group border-2 border-gray-600 p-5 hover:bg-gray-600/0 hover:border-gray-600/0 hover:text-[#00bcd4] transition-all duration-1000 ease-in-out"><span
-                    class="inline-block group-hover:animate-bounce">AWS
-                    Certifications</span></a>
-            <a href="./assets/brandon_resume.pdf" target="_blank" rel="noopener noreferrer"
-                class="group border-2 border-gray-600 p-5 hover:bg-gray-600/0 hover:border-gray-600/0 hover:text-[#00bcd4] transition-all duration-1000 ease-in-out"><span
-                    class="inline-block group-hover:animate-bounce">Resume</span></a>
-        </div>
+      <div
+        class="font-bold text-2xl hover:text-[#00bcd4] focus:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+      >
+        Extras
+      </div>
+      <div
+        class="lg:flex-row flex-col gap-y-10 text-sm font-normal flex gap-x-10"
+      >
+        <a
+          href="./assets/aws.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group border-2 border-gray-600 p-5 hover:bg-gray-600/0 hover:border-gray-600/0 hover:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+          ><span class="inline-block group-hover:animate-bounce"
+            >AWS Certifications</span
+          ></a
+        >
+        <a
+          href="./assets/brandon_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group border-2 border-gray-600 p-5 hover:bg-gray-600/0 hover:border-gray-600/0 hover:text-[#00bcd4] transition-all duration-1000 ease-in-out"
+          ><span class="inline-block group-hover:animate-bounce"
+            >Resume</span
+          ></a
+        >
+      </div>
     </div>
-
-
-
-
-
-
-
-</body>
-
+    <call-us-selector
+      phonesystem-url="https://hyfra.3cx.sc"
+      party="LiveChat146732"
+    ></call-us-selector>
+  </body>
 </html>
